@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+        <meta charset="utf-8">
+        <title>
+            {% block title %}
+            Senza Titolo
+            {% endblock title%}
+        </title>
+        <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div id="logo"><img src="{% static 'logo.png' %}" alt=""/></div>
+                <div id="topbanner"><img src="{% static 'top_banner.png' %}" width="800" height="200" alt=""/></div>
+            </header>
+            <aside id="leftsidebar">
+                <nav id="nav">
+                    <ul>
+                        {% block sidenav %}
+                        {% for pag in elenco_pagine %}
+                        <li>
+                            <a href="{{ pag.permalink }}">{{ pag.titolo }}</a>
+                        </li>
+                        {% endfor %}
+                        {% endblock sidenav %}
+                        <li><a href="/contatto">Scrivici</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section id="main">
+                {% block content%}
+                <h1>Benvenuti</h1>
+                <p>questo è il template per il sito</p>
+                {% endblock content %}
+            </section>
+            <footer id="footer">Copyright &copy; 2022 - Gruppo Alpini Bareggio</footer>
+        </div>
+    </body>
+</html>

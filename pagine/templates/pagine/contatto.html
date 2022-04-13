@@ -1,0 +1,31 @@
+{% extends "pagine/pagina.html" %}
+{% block title %}
+Scrivici
+{% endblock title %}
+{% block sidenav %}
+    <li><a href="/">Torna a Guppo Alpini</a></li>
+{% endblock sidenav %}
+{% block content %}
+<h1>Scrivici</h1>
+
+{% if submitted %}
+    <p class="success">
+        Il tuo messaggio è stato inviato con successo, grazie.
+        <br>
+        -----     -----     -----     -----     -----     -----     -----
+        <br>
+        Nella casella email che hai inserito troverai una copia di quanto ci hai scritto. Se non la dovessi ricevere controlla nello "spam" della tua email oppure rimandaci la tua comunicazione perchè potresti aver inserito un indirizzo email non valido. 
+    </p>
+{% else %}
+    <form action="" method="post" novalidate>
+        <table>
+            {{ form.as_table}}
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Invia"></td>
+            </tr>
+        </table>
+        {% csrf_token %}
+    </form>
+{% endif %}
+{% endblock content %}

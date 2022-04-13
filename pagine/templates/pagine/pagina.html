@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ titolo }}{% endblock title %}
+{% block content %}
+{% autoescape off %}
+{{ contenuto }}
+{% endautoescape %}
+<p>
+    Ultimo aggiornamento: {{ aggiornato|date:"D d F Y" }}
+</p>
+{% endblock content%}  
