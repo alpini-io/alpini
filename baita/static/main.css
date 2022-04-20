@@ -70,12 +70,13 @@ body {
     margin-right: 10px;
     padding-right: 10;
 }
+/*
 #logo.header {
     position: absolute;
     top: 0;
     left: -10px; 
 }
-
+*/
 ul.errorlist {
     margin: 0;
     padding: o;
