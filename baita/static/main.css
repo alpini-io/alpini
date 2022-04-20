@@ -10,10 +10,10 @@
 }
 #logo {
     position:absolute; 
-    top:80px; 
-    left:690px; 
-    width:80px; 
-    height:80px;
+    top:63px; 
+    left:670px; 
+    width:90px; 
+    height:90px;
 }
 #wrapper {
     margin-top: 0px;
@@ -72,8 +72,8 @@ body {
 }
 #logo.header {
     position: absolute;
-    top: 10; /* 0 e -10 */
-    left: 400px; 
+    top: 0;
+    left: -10px; 
 }
 
 ul.errorlist {
