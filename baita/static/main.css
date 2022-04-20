@@ -5,6 +5,16 @@
     width: 800px;
     height: auto;
 }
+#topbanner {
+    {position:relative; width:800px; height:200px;}
+}
+#logo {
+    position:absolute; 
+    top:80px; 
+    left:690px; 
+    width:80px; 
+    height:80px;
+}
 #wrapper {
     margin-top: 0px;
     margin-left: auto;
@@ -62,8 +72,8 @@ body {
 }
 #logo.header {
     position: absolute;
-    top: 0;
-    left: -10px; 
+    top: 10; /* 0 e -10 */
+    left: 400px; 
 }
 
 ul.errorlist {
