@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l&d4y0jvduy_l8g629iuw)hto9d@(6cc&5om4+_)*88)$vrt_)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True 
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'alpini.io']
 
